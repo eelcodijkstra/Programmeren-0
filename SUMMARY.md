@@ -5,7 +5,7 @@
    * [Vragen en opdrachten](Chapter-1/vragen-en-opdrachten.md)
 * [Elementaire opdrachten en opeenvolging](Chapter-2/elementaire-opdrachten.md)
 * [Leesbare programma's](Chapter-6/leesbare-programmas.md)
-* [Functies en parameters](chapter-3/functies-en-parameters.md)
+* [Functies en parameters](Chapter-3/functies-en-parameters.md)
 * [Herhaling](Chapter-4/herhaling.md)
 * [Functie als parameter](Chapter-3/functie-als-parameter.md)
 * [Enkelvoudige waarden](Chapter-7/enkelvoudige-waarden.md)

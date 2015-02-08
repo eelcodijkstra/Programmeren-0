@@ -10,6 +10,7 @@ De turtle kunnen we de volgende elementaire opdrachten geven:
 * `penDown()` - zet de pen omhoog (laat geen spoor meer achter);
 * `forward(n)` - ga `n` stappen vooruit (bijvoorbeeld uitgedrukt in pixels);
 * `right(n)` - draai `n` graden naar rechts.
+* `turnRight(r, n)` - maak een cirkelboog met straal `r` over `n` graden naar rechts. 
 
 Voor het draaien van de turtle moet je weten dat 90 graden een rechte hoek is; na een draai van 360 graden staat de turtle weer precies in dezelfde richting.
 
@@ -59,25 +60,30 @@ We beschrijven deze opdrachten in de taal JavaScript. De spelregels van een prog
 Met de afzonderlijke opdrachten kunnen we nog niet zoveeel: de kracht zit in het combineren van opdrachten. De eenvoudigste manier is de *opeenvolging*: dit geven we aan door de opdrachten achter elkaar te zetten, waarbij we elke opdracht afsluiten door een `;`. Op deze manier kunnen we een vierkant tekenen:
 
 ```js
-penDown();
-forward(100); right(90);
-forward(100); right(90);
-forward(100); right(90);
-forward(100); right(90);
+forward(100); 
+right(90);
+forward(100); 
+right(90);
+forward(100); 
+right(90);
+forward(100); 
+right(90);
 ```
 Dit geeft het volgende resultaat:
 
-> FIG vierkant
+> ![Figuur van een vierkant](figs/square50.png)
 
 ## Opeenvolging: driehoek
 
 We kunnen op eenzelfde manier een driehoek tekenen:
 
 ```js
-penDown();
-forward(100); right(120);
-forward(100); right(120);
-forward(100); right(120);
+forward(100); 
+right(120);
+forward(100); 
+right(120);
+forward(100); 
+right(120);
 ```
 
 Dit heeft als resultaat:

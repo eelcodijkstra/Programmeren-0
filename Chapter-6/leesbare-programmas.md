@@ -2,7 +2,9 @@
 
 ### Programma als instructie voor de computer
 
-We beschrijven deze opdrachten in de taal Javascript. De spelregels van een programmeertaal zijn erg strikt: als je je daar niet aan houdt, werkt je programma niet, of doet het iets anders dan je bedoelt. Deze strikte regels zijn in eerste instantie bedoeld om aan de computer precies te instrueren.
+We beschrijven deze opdrachten in de taal Javascript. De spelregels van een programmeertaal zijn erg strikt: als je je daar niet aan houdt, werkt je programma niet, of doet het iets anders dan je bedoelt. Deze strikte regels zijn in eerste instantie bedoeld om de computer precies te instrueren.
+
+De computer voert deze opdrachten letterlijk uit, ook als dat in jouw ogen misschien onzinngi is. Een computer doet precies wat je zegt, niet wat je bedoelt, of wat je wilt.
 
 ### Programma als uitleg voor mensen
 

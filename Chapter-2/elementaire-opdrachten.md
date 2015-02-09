@@ -73,6 +73,19 @@ Dit geeft het volgende resultaat:
 
 > ![Figuur van een vierkant](figs/square50.png)
 
+Deze reeks opdrachten beschrijft het *proces* voor het tekenen van een vierkant. Dit proces heeft als resultaat de tekening van het vierkant.
+
+Deze beschrijving is een beetje langdradig: de basisstap hierin is het tekenen van een zijde, gevolgd door het draaien van de turtle:
+
+```js
+forward(100);
+right(90);
+```
+
+Deze stap wordt viermaal herhaald. We zullen later zien dat we deze herhaling veel korter kunnen beschrijven. In dit geval is het verschil niet zo groot, maar als het aantal stappen in de miljarden loopt, wat voor computerprogramma's niet ongebruikelijk is, dan is het niet meer handig om alle stappen uit te schrijven.
+
+Merk op dat we de basisstap viermaal volledig uitgevoerd hebben: ook de laatste draai van de turtle. Voor het tekenen van het vierkant is dit niet echt nodig. We hebben dit gedaan om geen uitzondering te maken voor de laatste keer. Bovendien zorgen we er zo voor dat de turtle na het tekenen van het vierkant weer precies dezelfde toestand heeft als ervoor: zowel de positie als de richting zijn gelijk aan de situatie voor het tekenen van het vierkant. Dit soort regels maakt het gemakkelijker om figuren te combineren.
+
 ## Opeenvolging: driehoek
 
 We kunnen op eenzelfde manier een driehoek tekenen:
@@ -90,3 +103,9 @@ Dit heeft als resultaat:
 
 > ![Figuur van een driehoek](figs/triangle50.png)
 
+De basisstap is in dit geval:
+
+```js
+forward(100);
+right(120);
+```

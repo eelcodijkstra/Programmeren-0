@@ -91,11 +91,11 @@ Merk op dat we de basisstap viermaal volledig uitgevoerd hebben: ook de laatste 
 We kunnen op eenzelfde manier een driehoek tekenen:
 
 ```js
-forward(100); 
+forward(100);
 right(120);
-forward(100); 
+forward(100);
 right(120);
-forward(100); 
+forward(100);
 right(120);
 ```
 

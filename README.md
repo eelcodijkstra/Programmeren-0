@@ -6,7 +6,7 @@ Javascript is de "programmeertaal van het web". Elke browser kan programma's in 
 
 ## Waarom zou je leren programmeren?
 
-Een bekend boek van Dougla Rushkoff heet *Program or be programmed*. We vinden tegenwoordig steeds meer programmeerbare systemen in onze omgeving. Deze systemen kunnen eenvoudig aan ons persoonlijk aangepast worden (*personalisatie*). Bedrijven gebruiken dit maar al te graag om onze omgeving naar hun wensen in te richten - en daarmee ons gedrag te beïnvloeden. We komen daar alleen onderuit door onze omgeving zelf in te richten, op een manier die tegemoet komt aan onze doelen. Met andere woorden: leer om te gaan met programmeerbare systemen, en leer deze programmeerbaarheid te gebruiken voor je eigen doeleinden.
+Een bekend boek van Douglas Rushkoff heet *Program or be programmed*. We vinden tegenwoordig steeds meer programmeerbare systemen in onze omgeving. Deze systemen kunnen eenvoudig aan ons persoonlijk aangepast worden (*personalisatie*). Bedrijven gebruiken dit maar al te graag om onze omgeving naar hun wensen in te richten - en daarmee ons gedrag te beïnvloeden. We komen daar alleen onderuit door onze omgeving zelf in te richten, op een manier die tegemoet komt aan onze doelen. Met andere woorden: leer om te gaan met programmeerbare systemen, en leer deze programmeerbaarheid te gebruiken voor je eigen doeleinden.
 
 * [Douglas Rushkoff, *Program or be programmed*](http://www.rushkoff.com/program-or-be-programmed/)
 

@@ -14,7 +14,8 @@
 * [Functie als parameter](Chapter-3/functie-als-parameter.md)
 * [Enkelvoudige waarden](Chapter-7/enkelvoudige-waarden.md)
 * [Bouwen van programma's](Chapter-8/bouwen-van-programmas.md)
-* [Software, algoritmen](Chapter-9/software-algoritmen.md)
-* [Statisch en dynamisch](statisch_en_dynamisch/README)
 * [Hoe weet je of het altijd werkt?](Chapter-5/hoe-weet-je-oft-werkt.md)
-
+* [Overige onderwerpen](Chapter-9/overige-ideeen.md)
+    * [Namen en waarden](Chapter-9/namen-en-waarden-1.md)
+    * [Software, algoritmen](Chapter-9/software-algoritmen.md)
+    * [Statisch en dynamisch](Chapter-9/statisch-en-dynamisch.md)

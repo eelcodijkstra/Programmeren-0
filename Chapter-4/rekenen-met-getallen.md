@@ -25,6 +25,30 @@ Een expressie kun je zien als een rekenvoorschrift: je geeft aan hoe het resulta
 
 ## Operatoren
 
+We gebruiken voor getallen voorlopig de volgende operatoren:
+
+* `*` "maal", vermenigvuldigen
+* `/` "gedeeld door", delen
+* `%` "modulo", rest na deling
+* `+` "plus", optellen
+* `-` "min", aftrekken
+
+De operator `%` (modulo: rest na deling) gebruiken we vrij vaak in onze programma's. Enkele voorbeelden:
+
+* `13 % 2` geeft `1`: `13` is een oneven getal
+* `16 % 2` geeft `0`: `16` is een even getal
+* `13 % 10` geeft `3`: het laatste decimale cijfer van het getal
+
+Operatoren hebben een prioriteit: deze bepaalt de rekenvolgorde, en daarmee de betekenis van de expressie. Vermenigvuldigen (`*`) en delen (`/` of `%`) gaan voor optellen (`+`) en aftrekken (`-`).
+
+Operatoren met gelijke prioriteit worden van links naar rechts uitgevoerd. `a - b - c` betekent `(a - b) - c`. Dit noemen we ook wel *links-associatief*.
+
+* [Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+
+## Haakjes
+
+Door middel van haakjes kun je de rekenvolgorde aangeven. Dit gebruik je vooral als deze volgorde afwijkt van de volgorde bepaald door de prioriteit van de operatoren.
+
 ## Functies met resultaat
 
 De functies die we eerder behandeld hebben, geven een *effect*, bijvoorbeeld in de vorm van een tekening op het scherm. Hieronder behandelen we "echte" functies, die een waarde opleveren als resultaat. Door middel van de opdracht `return expr;`, waarbij `expr` één of andere expressie is, geef je het functieresultaat aan.
@@ -49,7 +73,7 @@ We kunnen met de bouwstenen die we hebben willekeurig ingewikkelde expressies sc
 dubbel(dubbel(10) + 5)) * 2
 ```
 
-> *Opmerking*: we schrijven hier geen `;` na de aanroep van een functie; dat is omdat het niet op een opdracht (statement) gaat, maar om een waarde. Deze waarde willen we mogelijk met andere waarden in een expressie combineren. Ook na een getal schrijven we geen `;`.
+> *Opmerking*: we schrijven hier geen `;` na de aanroep van een functie; dat is omdat het niet op een opdracht (statement) gaat, maar om een waarde. Deze waarde willen we mogelijk met andere waarden in een expressie combineren. Ook na een getal schrijven we immers geen `;`.
 
 
 Zoals je in dit voorbeeld ziet, kan een parameter ook een getal voorstellen, en kunnen we overal waar in een expressie een getal verwacht wordt, een parameter gebruiken.

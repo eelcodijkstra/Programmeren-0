@@ -19,3 +19,4 @@
     * [Namen en waarden](Chapter-9/namen-en-waarden-1.md)
     * [Software, algoritmen](Chapter-9/software-algoritmen.md)
     * [Statisch en dynamisch](Chapter-9/statisch-en-dynamisch.md)
+    * [Bouwen van programma's: expressies](Chapter-9/expressies-bouwen.md)

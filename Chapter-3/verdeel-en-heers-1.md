@@ -12,3 +12,44 @@ Een voorbeeld is het tekenen van een huis: de deelvormen zijn een rechthoek en e
 
 Bij het combineren van deeloplossingen heb je vaak "lijm" nodig: extra opdrachten om de deeloplossingen aan te laten sluiten. In het geval van het huis bestaat deze uit het draaien van de turtle, voor en na het tekenen van de driehoek.
 
+* splits het probleem in *verschillende* deelproblemen;
+* splits het probleem in *gelijksoortige* deelproblemen.
+
+## Lijm
+
+Bij het combineren van deeloplossingen hebben we vaak wat extra code nodig. Dit kun je zien als de "lijm" om deze deeloplossingen te combineren tot een oplossing voor het oorspronkelijke probleem.
+
+## Verschillende deelproblemen
+
+Voorbeelden:
+
+* tekenen van huis (met driehoeken en rechthoeken)
+* tekenen van gezicht; verkeersborden
+
+## Gelijksoortige deelproblemen
+
+Voorbeelden:
+
+* tekenen van een straat; bloem; boom
+
+De manier van splitsen kan in dit geval een groot verschil maken:
+
+* splitsen in twee vrijwel even grote deelproblemen (halveren: binair, logaritmisch)
+* afsplitsen van een enkel element (lineair)
+
+Soms is het handig om twee elementen af te splitsen. Voorbeeld: sommeren van een reeks opeenvolgende getallen.
+
+(Wanneer is het halveren handig, en wanneer de lineaire aanpak?)
+
+> De lineaire aanpak kunnen we gebruiken in een normale herhaling. Het halveren geeft altijd een recursieve oplossing: we splitsen het oorspronkelijke probleem op in een tweetal gelijksoortige maar kleinere problemen.
+
+Een belangrijk onderdeel van herhaling is het vinden van de elementaire stap. Deze bestaat meestal uit twee delen: (i) de eigenlijke stap; (ii) de lijm, die nodig is om de volgende stap voor te bereiden.
+
+Denk bijvoorbeeld aan het tekenen van een straat:
+
+* de eigenlijke stap is het tekenen van een huis;
+* de lijm is de verplaatsing van de turtle naar de positie van het volgende huis.
+
+> In principe hebben we twee mogelijkheden: (a) we gebruiken de "lijm" voor de eigenlijke stap; (ii) de gebruiken de "lijm" na de eigenlijke stap. Wij hanteren hier meestal de tweede methode (om consequent te zijn?).
+
+

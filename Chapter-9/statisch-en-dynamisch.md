@@ -14,7 +14,7 @@ function square(size) {
   edge(size);
   edge(size);
   edge(size);
-  edge(size);  
+  edge(size);
 }
 
 square(20);

@@ -20,3 +20,8 @@
     * [Software, algoritmen](Chapter-9/software-algoritmen.md)
     * [Statisch en dynamisch](Chapter-9/statisch-en-dynamisch.md)
     * [Bouwen van programma's: expressies](Chapter-9/expressies-bouwen.md)
+    * [Objecten via functions](Chapter-9/objects-with-functions.md)
+    * [Gevalsonderscheid](Chapter-9/gevalsonderscheid.md)
+    * [Arrays](Chapter-9/arrays-1.md)
+    * [Objecten](Chapter-9/objecten-1.md)
+    * [Variabelen](Chapter-9/variabelen.md)

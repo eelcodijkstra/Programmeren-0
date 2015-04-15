@@ -24,3 +24,11 @@ Een dergelijk patroon komen we in meer gevallen tegen: doe je het meeste werk bi
 
 > Kan ik andere voorbeelden hiervan geven?
 
+## Andere voorbeelden
+
+* sommeren van alle getallen van 0..99 (volgens de aanpak van Euler).
+* binair zoeken: gebruik van ordening ("gesorteerd").
+
+Soms kom je ook een andere variant tegen: door meer energie te steken in het analyseeren van het probleem (vgl. Euler), kun je met een eenvoudiger algoritme volstaan - of zelfs met een analytische oplossing.
+
+

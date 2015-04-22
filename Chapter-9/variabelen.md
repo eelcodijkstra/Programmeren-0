@@ -45,8 +45,11 @@ Zoals we gezien hebben gebruiken we variabelen om de toestand van een proces of 
 * een variabele is een naam (in een programma) die verwijst naar een waarde;
 * door middel van een *declaratie* introduceren we een nieuwe variabele;
     * we geven daarbij soms de initiële waarde van de variabele aan;
+    * `var x = 1, y = 10;
 * door middel van een *toekenning* geven we een bestaande variabele een nieuwe waarde;
+    * `x = y * 2 + 1;`
 * we kunnen in een expressie de naam van een variabele gebruiken. Bij het uitrekenen van deze expressie wordt dan de waarde van de variabele *op dat moment in het proces* gebruikt.
+    * `5 * sin(x * 2)`
 
 ### Declaratie
 
@@ -57,7 +60,7 @@ We introduceren een nieuwe variabele in een programma door middel van een *decla
     * voor de computer moet deze naam uniek zijn (binnen een bepaalde context);
     * voor de programmeur moet deze naam *betekenisvol* zijn. Aan de naam moet je kunnen aflezen wat de rol van deze variabele is in het programma.
 * meestal een *initiële waarde*.
-* soms (in commentaar) een verdere uitleg van de betekenis.
+* soms (in commentaar) een verdere uitleg van de betekenis. Deze is bedoeld voor de programmeur; de computer doet hier verder niets mee.
 
 Enkele voorbeelden:
 
@@ -113,6 +116,14 @@ Hoe vinden we bij het gebruik van een naam de bijbehorende declaratie, en daarme
 
 Om dit proces te vergemakkelijken, hanteren we de regel dat we de declaraties aan het begin van een functie plaatsen. (Dit wordt niet afgedwongen door JavaScript, maar hulpmiddelen als JSLint kunnen je wel helpen om dergelijke regels te handhaven.)
 
+##### Enkele gevolgen
+
+* je hebt lokaal (in een functie) een grote vrijheid in het kiezen van namen. Je kunt, met opzet of ongemerkt, een naam invoeren die ook in een andere functie gebruikt wordt.
+* als je lokaal een naam invoert, door middel van een declaratie, dan maak je andere declaraties van die naam lokaal onbereikbaar. Als je een globale variabele of functie wilt kunnen gebruiken, dan moet je niet een lokale declaratie voor deze naam invoeren.
+* als je een groot programma hebt, dan wordt het al snel lastig om een overzicht te houden over de namen die je gebruikt. Het groeperen van namen, bijvoorbeeld in objecten, helpt daarbij.
+    * voorbeeld: het object `pos` groepeert de lokale (property) namen `x` en `y`.
+* door het gebruik van een library of framework als jQuery voor je op het globale niveau ook allerlei namen in, die kunnen conflicteren met je eigen namen, of met globale namen van andere libraries.
+    * nieuwere versies van JavaScript proberen dit probleem op te lossen.
 
 ### Toekenning
 
@@ -128,6 +139,8 @@ n = n + 1;
 ```python
 som, n = som + n * n, n + 1
 ```
+
+*Het gebruik van `=` voor toekenning kun je zien als een ontwerpfout in Javascript. Een asymmetrische notatie als `:=` of `<-` geeft de bedoeling duidelijker weer.*
 
 ### Een stukje van een proces
 
@@ -163,7 +176,10 @@ Een variabele (of constante, parameter) heeft in een programma een bepaalde *bet
 
 Soms bestaat deze betekenis uit de relatie tussen meerdere variabelen. (Vgl. invariant)
 
-* kies betekenisvolle namen. 
+* *kies betekenisvolle namen*. Voor de computer maakt het niet uit, maar voor het begrijpen van een programma is het gebruik van betekenisvolle namen essentieel.
+    * hoe groter de scope van een naam (het deel van de programmatekst waarin de naam gebruikt wordt), des te belangrijker is de keuze van een betekenisvolle naam.
+    * hoe vaker een naam gebruikt wordt, des te korter kan deze zijn. Anders gezegd: een naam die niet vaak gebruikt wordt, moet extra duidelijk zijn - en is dan meestal langer.
+    * voor een lokale variabele kun je meestal een korte naam kiezen; voor een loop-variabele is `i` of `n` niet ongebruikelijk.
 
 ### Een model van het geheugen
 
@@ -258,4 +274,11 @@ In het geval van de turtle:
 
 * voor een virtuele turtle, bijvoorbeeld voor het tekenen op het Canvas, is het mogelijk om door toekenning aan de positie-variabelen de positie van de turtle aan te passen. Dit is een vorm van "teleportatie".
     * het is de vraag of je dit wilt - dat hangt af van de context. Je kunt de toegang tot de variabelen eventueel afschermen, als je dat wilt. (=> Information hiding)
-* voor een fysieke turtle, bijvoorbeeld een robot die tekenend over het papier beweegt, is een verandering van de positie alleen nodig door opdrachten als `forward` en `right`. 
+* voor een fysieke turtle, bijvoorbeeld een robot die tekenend over het papier beweegt, is een verandering van de positie alleen nodig door opdrachten als `forward` en `right`.
+
+## Notities
+
+### Ontwikkelingen in JavaScript
+
+* andere vormen van declaratie: `let` (heeft een eigen scope, in plaats van function scope);
+* globale namen zoveel mogelijk gegroepeerd - bijvoorbeeld `Number.parseInt` in plaats van `parseInt`. 

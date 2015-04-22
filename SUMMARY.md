@@ -25,3 +25,4 @@
     * [Arrays](Chapter-9/arrays-1.md)
     * [Objecten](Chapter-9/objecten-1.md)
     * [Variabelen](Chapter-9/variabelen.md)
+    * [Representatie](Chapter-9/representatie.md)

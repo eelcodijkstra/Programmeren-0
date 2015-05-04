@@ -55,3 +55,4 @@ Zo spreken we bijvoorbeeld over "dynamisch" geheugen (DRAM) en "statisch" geheug
 
 
 En dan?
+

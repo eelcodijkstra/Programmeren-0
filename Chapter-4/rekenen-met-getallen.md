@@ -61,9 +61,9 @@ Als voorbeeld hiervan gebruiken we enkele bekende wiskundige functies. In JavaSc
 
 Bekende constanten zijn:
 
-* `Math.PI` - de constante $$\pi$$ (3.14152965...)
-* `Math.E` - de constante $$e$$ (2.7182818...)
-* `Math.SQRT2` - de constante $$\sqrt{2}$$ (1.41421356...)
+* `Math.PI` - de constante \\(\pi\\) (3.14152965...)
+* `Math.E` - de constante \\(e\\) (2.7182818...)
+* `Math.SQRT2` - de constante \\(\sqrt{2}\\) (1.41421356...)
 
 Hiermee kunnen we bijvoorbeeld de volgende expressies maken:
 
@@ -71,7 +71,7 @@ Hiermee kunnen we bijvoorbeeld de volgende expressies maken:
 * `Math.sqrt(144)` - geeft 12
 * `10 * Math.random() + 1` - random getal tussen 1 en 10.
 
-> Opmerking: een getal als `Math.PI` kun je niet exact voorstellen als een zwevende-komma getal: je gebruikt een benadering, met een beperkt aantal cijfers. Als je verder rekent met zo'n benadering, wordt het antwoord ook een benadering. Als je exact wilt rekenen met computers, kun je je beter beperken tot gehele getallen. ($$\pi$$ valt dan buiten de boot.) 
+> Opmerking: een getal als `Math.PI` kun je niet exact voorstellen als een zwevende-komma getal: je gebruikt een benadering, met een beperkt aantal cijfers. Als je verder rekent met zo'n benadering, wordt het antwoord ook een benadering. Als je exact wilt rekenen met computers, kun je je beter beperken tot gehele getallen. (\\(\pi\\) valt dan buiten de boot.) 
 
 De notatie `Math.xxx` leggen we later uit. Voorlopig kun je `Math.sqrt` als een samengestelde naam beschouwen.
 

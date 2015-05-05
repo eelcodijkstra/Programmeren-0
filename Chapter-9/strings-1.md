@@ -1,12 +1,12 @@
 ## Strings
 
-Een tweede soort waarde in JavaScript is de *String*: een rij tekens, bijvoorbeeld letters, cijfers, en andere tekens. Meestal gebruik je strings voor leesbare tekst.
+Een tweede soort waarde in JavaScript is de *String*: een rij tekens: letters, cijfers, en andere tekens. Meestal gebruik je strings voor leesbare tekst.
 
 ### Waarvoor gebruik je strings?
 
 Zowel mensen als computers kunnen goed met tekst, in de vorm van strings, omgaan. Dit betekent dat we strings vaak tegenkomen in het interface tussen mens en computer: bij invoer en uitvoer, als programmatekst, als data, en bij protocollen waar zowel mensen als computers bij betrokken zijn.
 
-Bovendien is tekst gestandaardiseerd, in de vorm van Ascii of Unicode (UTF-8, enz.). Hierdoor is tekst heel geschikt voor de uitwisselen van gegevens tussen programma's en tussen computers. Tekst leent zich ook goed voor het bewaren van gegevens. Vormen als XML of JSON kom je daardoor overal tegen.
+Bovendien is tekst gestandaardiseerd, als Ascii of Unicode (UTF-8, enz.). Hierdoor is tekst een geschikte vorm  voor het uitwisselen van gegevens tussen programma's en tussen computers. Tekst leent zich ook goed voor het bewaren van gegevens. Vormen als XML of JSON kom je daardoor overal tegen.
 
 > Het gaat hier om platte tekst: een reeks tekens zonder verdere opmaak in de vorm van kleur, lettertypes en dergelijke.
 
@@ -35,6 +35,12 @@ De string `""` of `''` heeft lengte 0. Dit noemen we *de lege string*.
 
 > We spreken over *de* lege string, omdat er maar één lege string is. Op dezelfde manier spreken we over *de* lege verzameling, of over *het* getal 0.
 
+De lege string is de *nul-waarde* voor concatenatie; voor elke string `str` geldt:
+
+* `str + "" === str`
+* `"" + str === str`
+
+> Dit heet de nul-waarde: voor optellen met het getal 0 gelden vergelijkbare regels.
 
 #### Bijzondere tekens in strings
 
@@ -90,7 +96,7 @@ We gebruiken deze operator soms ook om lange stringwaarden weer te geven, die ni
 > Een alternatief is om een regel in het programma te splitsen, met behulp van het teken \ aan het eind van de tekstregel. Een nadeel is dat je dan de vervolgregels niet netjes kunt laten inspringen.
 
 ```js
-var long = "This is an example\
+var long = "This is an example \
 of a long line in the program text;"
 ```
 
@@ -110,7 +116,7 @@ Je kunt ook een deelstring selecteren. Je geeft de beginpositie op en de lengte 
 De positie `endSlice` is de eerste positie *na* de deelstring.
 Een negatieve index bij `slice` telt vanaf het eind van de string; `-1` is de positie van het laatste teken. (Een negatieve index `i` komt overeen met index `length + i`.)
 
-> Je kunt op deze manier alleen een teken of een deelstring (substring) opvragen. Een string is een onveranderlijke waarde ("immutable"): je kunt een string niet veranderen door middel van indicering. (In andere talen kan dat soms wel.)
+> Je kunt op deze manier alleen een teken of een deelstring (substring) opvragen. Je kunt de stringwaarde niet veranderen: een string is in JavaScript een onveranderlijke waarde ("immutable"). In andere talen kun je stringwaarde soms wel veranderen.
 
 
 ### Omzetten van een waarde in een string (conversie)
@@ -133,89 +139,37 @@ Wat is de handigste aanpak om problemen te voorkomen? (Wat zeg Crockford hierove
 | `"123" + 4`   | `"1234"`  |
 | `4 + "123"`   | `"4123"`  |
 
+Soms willen we meer invloed hebben op de precieze notatie van het getal, bijvoorbeeld het aantal posities na de decimale punt. Hiervoor kunnen we de volgende functies gebruiken:
 
-### Zoeken (en vervangen)
+* `num.toFixed(n)` - `n` cijfers na de decimale punt
+* `num.toExponential(n)` - exponent-notatie, `n` cijfers na de decimale punt
+* `num.toPrecision(n)` - in `n` cijfers nauwkeurig
 
+Deze operaties ronden het getal eventueel af.
 
+#### Van string naar getal
 
-## Hoe gebruik je strings bij de constructie van programma's?
+Voor het omzetten van een `numStr` naar het bijbehorende (gehele) getal gebruiken we `parseInt(numStr, 10)`. We gebruiken hier het grondtal 10 - maar je kunt ook een een ander grondtal gebruiken.
 
-### Tagged data
+> Het is verstandig om altijd het grondtal aan te geven. Soms wordt als default-grondtal 8 gebruikt: je krijgt dan misschien een andere uitkomst dan je gedacht had. `parseInt("0177")` levert bij sommige JavaScript-implementaties 127 op (via grondtal 8).
 
-Door middel van *tags* kunnen we een tekst structuur geven, zonder de flexibiliteit va strings te verliezen.
+Voor het omzetten van een floating-point waarde gebruik je `parseFloat(x)`.
 
-HTML is een voorbeeld van een tagged tekst-vorm, maar je kunt hierbij alleen maar gebruik maken van een vaste verzameling voorgedefinieerde tags.
+### Vergelijken
 
-XML is een algemenere vorm hiervan: 
-Een voorbeeld van een tagged data-vorm is XML; dit is een gegeneaan fleibiliteit in te boeten.
+We kunnen twee strings vergelijken, om te zien of deze gelijk zijn: `str === "Hello"` of `str !== "Hello"`.
 
+We kunnen strings ook alfabetisch vergelijken, bijvoorbeeld `str <= "Marie"`. Dit kan bijvoorbeeld handig zijn voor het zoeken naar een string, of voor het sorteren van strings.
 
-### Strings voor opslag en communicatie: JSON
-
-JavaScript-waarden zoals getallen (Number), booleans, objecten en arrays hebben een interne representatie die je niet buiten het proces van een JavaScript-programma kunt gebruiken. String-waarden, met enkele beperkingen, zijn universeel bruikbaar, ook buiten het proces. Strings kun je daarom ook gebruiken om waarden op te slaan of te communiceren met andere computers.
-
-###
-
-## Hoe gebruik je strings bij het oplossen van problemen?
-
-Veel toepassingsdomeinen gebruiken traditioneel een tekst-vorm. Denk bijvoorbeeld aan naam- en adresgegevens. De naam van een persoon is belangrijk (voor veel mensen belangrijker dan hun "nummer"). Een straat of woonplaats is ook een string.
-
-Daarnaast is een string-representatie erg flexibel: je kunt er altijd nog elementen aan toevoegen als daar later behoefte aan is.
-
-## PM
-
-### JSON
-
-Voor het opslaan van een samengestelde waarde, of voor het communiceren hiervan met een andere computer, is een string-representatie erg handig. Je bent dan niet afhankelijk van de interne representatie van bijvoorbeeld getallen. 
-
-Speciaal voor deze doeleinden is de JSON-vorm ontwikkeld: dit is een manier om samengestelde waarden (objecten en arrays) om te zetten in een string-vorm (tekst), en omgekeerd.
-
-* `JSON.stringify(obj)` - omzetten van `obj` in JSON-tekstvorm
-* `JSON.parse(str)` - omzetten van JSON-tekstvorm (string) in JavaScript-waarde.
-
-Enkele voorbeelden:
+> Voor het vergelijken van strings moet je soms gebruik maken van de volgorde die in een bepaalde natuurlijke taal gebruikelijk is. Dit heet ook wel de "Collating sequence". Hiervoor is er een speciale vergelijkingsfunctie: `str1.localeCompare(str2, locale)`. Hierin geeft `locale` de manier van vergelijken aan. 
 
 
+### Zoeken
 
-Let op: je kunt geen cyclische datastructuren in JSON beschrijven. Als een property verwijst naar een ander object, dan wordt dit object ook opgenomen in de JSON-representatie. In het geval van een cyclische datastructuur zou dit resulteren in een oneindig grote vorm. Gelukkig wordt bij het opstellen van een JSON-representatie hierop gecontroleerd: je krijgt een foutmelding.
+Voor het zoeken van tekens of deelstrings in een string kun je de volgende operaties gebruiken:
 
-Let op: je kunt geen functies in JSON beschrijven. Functies als onderdeel van een samengestelde waarde worden genegeerd.
+* `str.indexOf(x, pos)` - zoek naar het eerste voorkomen van `x` in `str`, vanaf positie `pos`. Als `x` niet voorkomt (vanaf `pos`) is het resultaat `-1`.
+* `str.lastIndexOf(x), pos` - zoek naar het laatste voorkomen van `x` in `str`, vanaf positie pos. Als `x` niet voorkomt (vanaf `pos`) is het resultaat `-1`.
 
-### Gebruik van JSON
+`indexOf` zoek van voor naar achter, `lastIndexOf` van achter naar voor.
 
-We kunnen JSON gebruiken voor het opslaan van een JavaScript-object in `localStorage`: de persistente opslag van de browser.
-
-> *persistent* wil hier zeggen dat de waarden die in `localStorage` opgeslagen worden blijven bestaan, ook als de browser afgesloten wordt, of als de computer uitgezet wordt.
-
-
-### JSON en XML
-
-JSON kan voor dezelfde soort toepassingen gebruikt worden als XML; een voordeel van JSON is dat het minder "verbose" is: je hebt minder tekst nodig voor het beschrijven van eenzelfde object.
-
-Bij een XML-document hoort eigenlijk ook nog een beschrijving van de structuur van dat document, in de vorm van een DTD-bestand. Voor JSON bestaat er niet een dergelijk document, om de structuur van een JSON-object te beschrijven.
-
-Bij een REST-interface (API) van een web-dienst kun je vaak opgeven of je het resultaat in XML of in JSON wilt ontvangen.
-
-### String als universele vorm
-
-Strings en teksten zijn universele waarden, die voor heel veel verschillende toepassingen gebriikt kunnen worden. In principe kun je alle data en alle rekenwerk met behulp van strings doen, in plaats van met bitreeksen of getallen. Maar dit is niet altijd even efficiënt: we gebruiken daarom voor de meeste toepassingen een combinatie van verschillende soorten waarden.
-
-### Strings, teksten en tekstverwerking
-
-Er zijn twee manieren om teksten van bijvoorbeeld rapporten en boeken voor te stellen:
-
-* de WYSIWG-aanpak ("What you see is what you get"), zoals gebruikt in Word en andere tekstverwerkers. In dit geval werk je met een vorm die sterk lijkt op de uiteindelijke vorm, zoals deze op papier of op het scherm eruit moet zien.
-* de beschrijvende aanpak, zoals deze bijvoorbeeld voor HTML gebruikt wordt, of voor LaTeX. In dit geval werk je met een platte-tekst bestand waarin zowel de eigenlijke tekst als opdrachten voor het beschrijven van de structuur en van de opmaak staan.
-
-### Technische termen
-
-We gebruiken voor technische termen vaak de Engelse woorden, soms met een kleine Nederlandse aanpassing. Dit heeft als voordeel dat we een duidelijk ondescheid kunnen maken tussen technische termen met een bijzondere betekenis, en algemene termen zoals die in het Nederlands voorkomen.
-
-* immutable (onveranderlijk) - voorbeeld: een stringwaarde is onveranderlijk.
-* index (positie) - de index van letter `"W"` in `"Hello World"` is 6.
-
-### Vragen en opmerkingen
-
-* JavaScript heeft 3 operaties voor het selecteren van een substring: `slice`, `substr`, en `substring`. Wat zijn de subtiele verschillen? (`substring` lijkt mij eerlijk gezegd verwarrend...)
-
-### Log

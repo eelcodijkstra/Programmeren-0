@@ -26,3 +26,5 @@
     * [Objecten](Chapter-9/objecten-1.md)
     * [Variabelen](Chapter-9/variabelen.md)
     * [Representatie](Chapter-9/representatie.md)
+    * [Strings](Chapter-9/strings-1.md)
+

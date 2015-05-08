@@ -1,3 +1,5 @@
+# Objecten
+
 Een object in JavaScript is een samengestelde waarde. Een object bestaat uit een verzameling *properties* (eigenschappen). Een property heeft een naam en een waarde.
 
 Property `p` van object `obj` noteer je als `obj.p` (lees obj z'n p). Deze notatie gebruik je zowel voor het toekennen van een nieuwe waarde aan de property, als voor het gebruik van de waarde van de property in een expressie. Voorbeelden:
@@ -34,11 +36,11 @@ Door middel van de opdracht `delete obj.p` kun je property `p` verwijderen uit o
 
 ## Waarvoor gebruik je objecten?
 
-Bij de constructie van niet-triviale programma's spelen objecten vaak een belangrijke rol. *Object oriented programming* is een verzameling technieken en patronen gebaseerd op het gebruik van objecten. Sommige talen zijn speciaal hiervoor ontworpen (bijvoorbeeld Smalltalk en Java). Objecten vormen hierin het centrale thema. In een taal als JavaScript kun je veel van deze OOP technieken gebruiken.
+Bij de constructie van niet-triviale programma's spelen objecten vaak een belangrijke rol. *Object oriented programming* is een verzameling technieken en patronen gebaseerd op het gebruik van objecten. Sommige talen zijn speciaal hiervoor ontworpen, bijvoorbeeld Smalltalk en Java: objecten vormen daar het centrale thema. In een taal als JavaScript kun je veel van deze OOP technieken gebruiken.
 
 > JavaScript zou je kunnen beschrijven als "object based": objecten zijn wel belangrijk, maar niet alles is een object, en de OOP-aanpak is niet de enige mogelijke. Je kunt in JavaScript ook patronen van *functioneel programmeren* gebruiken.
 
-Je kunt objecten ook gebruiken voor het modelleren van het probleemdomein: Object Oriented Modeling. Onder andere in de wereld van de computergames is dit een handige aanpak: de meeste game-**objecten** zijn dan objecten.
+Je kunt objecten ook gebruiken voor het modelleren van het probleemdomein: Object Oriented Modeling. Onder andere in de wereld van de computergames is dit een handige aanpak: spelers en voorwerpen in het spel zijn dan objecten in het programma.
 
 In latere modules zullen we aan beide aspecten aandacht besteden.
 
@@ -143,7 +145,9 @@ var posA = {x: 10, y: 20};
 van posB = posA;
 ```
 
-We hebben nu de situatie als in FIG X. Als we het object via `posB` veranderen, zien we het resultaat via `posA`, en omgekeerd:
+> ![Aliasing](figs/alias1.png)
+
+We hebben nu de situatie als in de bovenstaande figuur. Als we het object via `posB` veranderen, zien we het resultaat via `posA`, en omgekeerd:
 
 ```js
 posB.y = 30;
@@ -152,6 +156,14 @@ console.log(posA.y); // ==> 30
 
 Op deze manier kunnen verschillende variabelen, parameter, en properties naar hetzelfde object verwijzen.
 
+Deze situatie kan ook optreden bij objecten die onderdeel zijn van een ander object:
+
+```js
+var turtle = {dir: 90, pos: {x: 10, y: 20}};
+var posX = turtle.pos;
+```
+
+> ![Aliasing van deelobject](figs/alias2.png)
 
 ### Cyclische objecten
 
@@ -268,3 +280,48 @@ NB:
 * gebruik voor definitie; (vgl.: Math; pos)
 * concreet voor abstract;
 * gebruik voor programmeren leidend, niet programmeertaal;
+
+
+### "Class" en "instance" in JavaScript
+
+Klassieke manier om in JavaScript een class te maken:
+
+
+```js
+function Counter() {  // constructor function
+  this.val = 0;
+}
+
+Counter.prototype.up = function () {
+  this.val = this.val + 1;
+};
+
+Counter.prototype.down = function () {
+  this.val = this.val - 1;
+};
+
+Counter.prototype.reset = function () {
+  this.val = 0;
+};
+
+Counter.prototype.value = function () {
+  return this.val;
+}
+
+var cntA = new Counter();
+var cntB = new Counter();
+
+console.log(cntA.value());
+cntA.up();
+console.log(cntA.value());
+
+
+```
+
+zie: [MDN: OOP in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
+
+Hoewel de regels van JavaScript dit niet afdwingen, is het gebruikelijk om constructor-functies met een hoofdletter te laten beginnen.
+
+### Inheritance: "subclass"
+
+* JavaScript wordt ook wel een prototype-based language genoemd.

@@ -199,9 +199,18 @@ Dit werkt voor eenvoudige objecten, maar in de volgende situaties moet je extra 
 
 ### Vergelijken van object-waarden
 
-Voor het vergelijken van object-waarden, in `objA === objB` gebruikt Javascript een vergelijking van de referenties: als beide variabelen naar hetzelfde object verwijzen, zijn ze gelijk, anders niet. Je kunt dit ook zien als een vergelijking op de *identiteit* van objecten, in plaats van op de waarde.
+Voor het vergelijken van object-waarden, in `objA === objB`, gebruikt Javascript een vergelijking van de referenties. Als beide variabelen naar hetzelfde object verwijzen, zijn ze gelijk, anders niet. Je kunt dit ook zien als een vergelijking op de *identiteit* van objecten, in plaats van op de waarde.
 
-Met op dat `objA === {p: 10}` altijd in `false` resulteert.
+```js
+var posA = {x: 10, y: 20};
+var posB = posA;
+var posC = {x: 10, y: 20};
+
+console.log(posA === posB); // ==> true
+console.log(posA === posC); // ==> false
+```
+
+Met op dat `objA === {p: 10}` altijd in `false` resulteert, ongeacht de waarde van `objA`.
 
 Als je de waarden van de properties van de objecten wilt vergelijken, dan moet je daarvoor een eigen functie maken.
 
@@ -262,7 +271,9 @@ In nieuwere versies van JavaScript kun je een `Map` gebruiken: de index (key) ka
     * overerving (inheritance)   
 * Agents; objecten met autonomie; eigen proces.
     * (coroutines, in Simula67)
-    
+* Voorbeeld: function als waarde in object
+    * event-handler: button-click
+
 ### Welke context?
 
 Volgende modules:

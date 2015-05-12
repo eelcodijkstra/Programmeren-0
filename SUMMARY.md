@@ -29,3 +29,6 @@
     * [Strings](Chapter-9/strings-1.md)
 * [Later uitwerken](Chapter-A/chapter-a.md)
     * [Strings-2](Chapter-A/strings-2.md)
+    * [Arrays-2](Chapter-A/arrays-2.md)
+    * [Arrays-3](Chapter-A/arrays-3.md)
+    

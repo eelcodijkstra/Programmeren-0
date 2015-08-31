@@ -27,6 +27,7 @@
     * [Variabelen](Chapter-9/variabelen.md)
     * [Representatie](Chapter-9/representatie.md)
     * [Strings](Chapter-9/strings-1.md)
+    * [Programmeren voor mensen](Chapter-9/programmeren-voor-mensen.md)
 * [Later uitwerken](Chapter-A/chapter-a.md)
     * [Strings-2](Chapter-A/strings-2.md)
     * [Arrays-2](Chapter-A/arrays-2.md)

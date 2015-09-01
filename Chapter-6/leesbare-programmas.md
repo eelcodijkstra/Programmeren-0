@@ -4,7 +4,7 @@
 
 We beschrijven deze opdrachten in de taal Javascript. De spelregels van een programmeertaal zijn erg strikt: als je je daar niet aan houdt, werkt je programma niet, of doet het iets anders dan je bedoelt. Deze strikte regels zijn in eerste instantie bedoeld om de computer precies te instrueren.
 
-De computer voert deze opdrachten letterlijk uit, ook als dat in jouw ogen misschien onzinngi is. Een computer doet precies wat je zegt, niet wat je bedoelt, of wat je wilt.
+De computer voert deze opdrachten letterlijk uit, ook als dat in jouw ogen misschien onzinngig is. Een computer doet precies wat je zegt, niet wat je bedoelt, of wat je wilt. Een computer is een machine: deze heeft geen oordeel over je programma.
 
 ### Programma als uitleg voor mensen
 

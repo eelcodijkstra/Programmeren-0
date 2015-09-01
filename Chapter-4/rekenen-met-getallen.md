@@ -114,3 +114,10 @@ function sqr(a) {
 }
 ```
 
+Omgekeerd kunnen we ook overal waar een getal verwacht wordt, een expressie schrijven. In het bijzonder geldt dit voor de parameters bij de aanroep van een functie, bijvoorbeeld:
+
+```js
+sqr(2 * 3)
+```
+
+We zullen later zien dat we andere waarden als parameters kunnen gebruiken: strings, arrays, objecten, en functies.

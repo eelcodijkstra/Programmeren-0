@@ -25,7 +25,7 @@ In het dagelijks leven vinden we meer voorbeelden van scripts, actoren en proces
 | Breipatroon | Breien | Herder    | Trui     |
 | Routebeschrijving | Reis    | Automobilist | Bestemming bereikt |
 | Orgelboek   | Afspelen | Draaiorgel | Muziek |
-| Optellen    | Rekenen | Boekhouder | Som     |
+| Optellen    | Rekenen | Boekhouder | Totaal     |
 
 De verschillende *scripts* zijn geschreven voor een bepaald soort *actor*. Een recept is geschreven in een taal die door een kok begrepen wordt. Als je wilt leren koken, dan moet je de recepten-taal (of koks-taal) leren begrijpen.
 
@@ -37,13 +37,13 @@ Een computer voert de opdrachten in het programma uit precies en letterlijk uit.
 
 ## Programma's zonder invoer
 
-Als een draaiorgel een orgelboek afspeelt, komt daar verder geen invoer aan te pas. Dit betekent ook dat het resultaat (met hetzelfde orgel) ook altijd precies gelijk is. Het systeem is programmeerbaar - met een ander programma krijg je een ander resultaat.
+Als een draaiorgel een orgelboek afspeelt, komt daar verder geen invoer aan te pas. Dit betekent ook dat het resultaat (met hetzelfde orgel) ook altijd precies gelijk is. Het draaiorgel is programmeerbaar - met een ander programma krijg je een ander resultaat.
 
 Andere voorbeelden van programma's die gebruikt worden om een apparaat te besturen:
 
-* het [Jaquard weefgetouw](http://nl.wikipedia.org/wiki/Jacquardgetouw): het programma, op een stel ponskaarten, beschrijft het patroon dat geweven moet worden. Dit is een ingenieus systeem - één van de voorlopers van de huidige computers.
-* dansende robot: je kunt ee robot een dans laten uitvoeren, je beschrijft dan precies welke danspassen de robot uit moet voeren; de robot reageert niet op de muziek, of op andere invoer, maar voert precies het dansprogramma uit;
-* verfrobot: sommige robots kunnen hun acties uitvoeren zonder invoer: ze maken altijd precies dezelfde bewegingen, hoe de omgeving er ook uitziet.
+* het [Jaquard weefgetouw](http://nl.wikipedia.org/wiki/Jacquardgetouw): het programma, op een stel ponskaarten, beschrijft het patroon dat geweven moet worden. Dit is een ingenieus systeem: het is één van de voorlopers van de huidige computers.
+* dansende robot: je kunt ee robot een dans laten uitvoeren, je beschrijft dan precies welke danspassen de robot uit moet voeren; de robot reageert niet op de muziek, of op andere invoer, maar voert precies het dansprogramma uit.
+* verfrobot: sommige robots kunnen hun acties uitvoeren zonder invoer: ze maken altijd precies dezelfde bewegingen, hoe de omgeving er ook uitziet. Mmeestal probeer je dan de omgeving zo precies mogelijk gelijk te houden.
 
 ## Programma's met invoer
 
@@ -51,7 +51,7 @@ De voorbeelden die we hiervoor gezien hebben geven bij hetzelfde programma altij
 
 Een zakrekenmachine is een voorbeeld van een processor met een vast programma dat reageert op invoer: de getallen en opdrachten die je via het toetsenbord invoert.
 
-Bij de meeste computerprogramma's is er sprake van invoer. Het verloop van het programma (het proces) wordt dan bepaald door het programma en door de waarden in de invoer (data). Deze data kan uit verschillende bronnen afkomstig zijn: bijvoorbeeld van de gebruiker, maar ook uit een bestand of uit een database.
+Bij de meeste computerprogramma's is er sprake van invoer. Het uitvoering van het programma (het proces) wordt dan bepaald door het programma *en* door de waarden in de invoer (data). Deze data kan uit verschillende bronnen afkomstig zijn: bijvoorbeeld van de gebruiker, maar ook uit een bestand of uit een database.
 
 > Neem als voorbeeld een tekstverwerkingsprogramma: in dit geval heb je te maken met het tekstbestand dan bewerkt wordt, en met de interactieve invoer van de gebruiker. Mogelijk kun je ook nog allerlei voorkeursinstellingen aangeven die in een apart bestand bewaard worden. Dit zijn allemaal voorbeelden van data die gebruikt worden bij de uitvoering van het programma.
 
@@ -75,7 +75,7 @@ In het kook-voorbeeld kan de chef-kok zijn assistent de opdracht geven voor het 
 
 #### Programma en data
 
-Het onderscheid tussen invoer en programma is niet fundamenteel - maar wel praktisch. In een universele Turingmachine - een wiskundig model van een universele computer - staat zowel de invoer als het programma op de band (tape); ook de tussenresultaten van de berekeningen komen daarop terecht. In een computer volgens de Von Neuman architectuur staan zowel de data (invoer en tussenresultaten) als het programma in hetzelfde geheugen.
+Het onderscheid tussen invoer en programma is niet fundamenteel, maar wel praktisch. In een universele Turingmachine - een wiskundig model van een universele computer - staat zowel de invoer als het programma op de band (tape); ook de tussenresultaten van de berekeningen komen daarop terecht. In een computer volgens de Von Neuman architectuur staan zowel de data (invoer en tussenresultaten) als het programma in hetzelfde geheugen. Een Harvard-architectuur gebruikt verschillende geheugens voor programma (code) en data.
 
 Het is om meerdere redenen praktisch om programma en data (invoer en tussenresultaten) te scheiden:
 
@@ -84,12 +84,3 @@ Het is om meerdere redenen praktisch om programma en data (invoer en tussenresul
 * de invoer beschrijft het actuele *probleem* dat we willen oplossen; het programma beschrijft  de manier waarop we de oplossing willen berekenen.
     * we kunnen over een programma redeneren voor alle mogelijke invoer, en dus voor alle mogelijke voorbeelden van het probleem dat het programma moet oplossen.
 * we kunnen een computersysteem beveiligen door te bewaken welke programma's in uitvoering genomen worden. We hoeven dan geen beveiliging op de data te hebben.
-
-
-
-
-
-(Moment of binding...)
-
-
-

@@ -25,7 +25,7 @@ In het dagelijks leven vinden we meer voorbeelden van scripts, actoren en proces
 | Breipatroon | Breien | Herder    | Trui     |
 | Routebeschrijving | Reis    | Automobilist | Bestemming bereikt |
 | Orgelboek   | Afspelen | Draaiorgel | Muziek |
-| Optellen    | Rekenen | Boekhouder | Som     |
+| Optellen    | Rekenen | Boekhouder | Totaal     |
 
 De verschillende *scripts* zijn geschreven voor een bepaald soort *actor*. Een recept is geschreven in een taal die door een kok begrepen wordt. Als je wilt leren koken, dan moet je de recepten-taal (of koks-taal) leren begrijpen.
 
@@ -86,10 +86,6 @@ Het is om meerdere redenen praktisch om programma en data (invoer en tussenresul
 * we kunnen een computersysteem beveiligen door te bewaken welke programma's in uitvoering genomen worden. We hoeven dan geen beveiliging op de data te hebben.
 
 
-
-
-
-(Moment of binding...)
 
 
 

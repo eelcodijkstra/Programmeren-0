@@ -8,6 +8,24 @@ Geef van de volgende begrippen aan of dit een (i) algoritme/programma; (ii) een 
 
 Geef bij de volgende processen aan wat (i) het programma/algoritme; (ii) de processor; (iii) het resultaat is:
 
+
+<quiz name="Vragen">
+    <question multiple>
+        <p>Breien van een trui:</p>
+        <answer>script/programma</answer>
+        <answer>processor</answer>
+        <answer correct>proces</answer>
+        <answer>resultaat</answer>
+        <explanation>Breien speelt zich af in de tijd.</explanation>
+    </question>
+    <question>
+        <p>Is it quiz?</p>
+        <answer correct>Yes</answer>
+        <answer>No</answer>
+    </question>
+</quiz>
+
+
 ---
 
 Breien van een trui:

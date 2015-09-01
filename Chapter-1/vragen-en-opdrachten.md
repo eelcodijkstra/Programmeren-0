@@ -19,58 +19,23 @@ Geef bij de volgende processen aan wat (i) het programma/algoritme; (ii) de proc
         <explanation>Breien speelt zich af in de tijd.</explanation>
     </question>
     <question>
-        <p>Is it quiz?</p>
-        <answer correct>Yes</answer>
-        <answer>No</answer>
+        <p>Handleiding van een bouwpakket-kast:</p>
+        <answer correct>script/programma</answer>
+        <answer>processor</answer>        
+        <answer>proces</answer>        
+        <answer>resultaat</answer>
+         <explanation>Uit te voeren door een monteur, met een kast als resultaat.
+         </explanation>
+    </question>
+    <question>
+        <p>Autorit met routebeschrijving van Amsterdam naar Brussel:</p>
+        <answer>script/programma</answer>
+        <answer>processor</answer>        
+        <answer correct>proces</answer>        
+        <answer>resultaat</answer>
+         <explanation>Een autorit speelt zich af in de tijd.
+         </explanation>
     </question>
 </quiz>
 
-
----
-
-Breien van een trui:
-
-- [ ] script/programma
-- [ ] processor
-- [x] proces
-- [ ] resultaat
-
-> Breien speelt zich af in de tijd
-
-Handleiding van een bouwpakket-kast:
-
-- [x] script/programma
-- [ ] processor
-- [ ] proces
-- [ ] resultaat
-
-> Uit te voeren door een monteur, met een kast als resultaat.
-
-Autorit met routebeschrijving van Amsterdam naar Brussel:
-
-- [ ] script/programma
-- [ ] processor
-- [x] proces
-- [ ] resultaat
-
-> Een autorit speelt zich af in de tijd
-
----
-
-* autorit van Amsterdam naar Brussel;
-* plannen van een autorit van Amsterdam naar Brussel;
-
-(evt. ook nog: invoer; ingrediënten/resources)
-
-
-Welke van deze processen zou ook door een machine (computer, robot) uitgevoerd kunnen worden? Wat zijn daarij lastige problemen?
-
-* statisch - verandert niet in de loop van de tijd;
-* dynamisch - verandert in de loop van de tijd.
-
-Zo spreken we bijvoorbeeld over "dynamisch" geheugen (DRAM) en "statisch" geheugen ("SRAM"). In het geval van dynamisch geheugen lekt de inhoud weg, tenzij je op tijd ingrijp ("refresh"). In het geval van statisch geheugen is een refresh niet nodig.
-
-
-
-En dan?
-
+Welke van deze processen zou ook door een machine (computer, robot) uitgevoerd kunnen worden? Wat zijn daarbij lastige problemen?

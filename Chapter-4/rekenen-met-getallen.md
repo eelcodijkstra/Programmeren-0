@@ -1,8 +1,8 @@
 # Rekenen met getallen
 
-In de voorbeelden hiervoor hebben we steeds gewerkt met "letterlijke" getallen (*literals*): een reeks cijfers in de programmatekst.
+In de voorbeelden hiervoor hebben we steeds gewerkt met letterlijke getallen (*literals*): een reeks cijfers in de programmatekst.
 
-In dit hoofdstuk gaan we rekenen met getallen.
+In dit hoofdstuk gaan we rekenen met getallen: letterlijke getallen, waarden die we berekend hebben, en parameters.
 
 In JavaScript zijn er ook andere waarden dan getallen, bijvoorbeeld strings (tekenreeksen), booleans (logische waarden), en samengestelde waarden in de vorm van objecten en arrays. Deze waarden komen in latere hoofdstukken aan bod.
 
@@ -21,7 +21,7 @@ Math.sqrt(4) + 12
 
 Een expressie kun je zien als een rekenvoorschrift: je geeft aan hoe het resultaat uitgerekend moet worden, uit de waarden die in de expressie gebruikt worden, met behulp van de operatoren.
 
-> Een verschil met expressies in de gebruikelijke wiskundige notatie is dat je vermenigvuldiging altijd moet schrijven als `*`, bijvoorbeeld `2 * a`. Je kunt dit niet afkorten als `2a`.
+> Een verschil met de gebruikelijke wiskundige notatie is dat je vermenigvuldiging altijd moet schrijven als `*`, bijvoorbeeld `2 * a`. Je kunt dit niet afkorten als `2a`.
 
 ## Operatoren
 
@@ -102,7 +102,6 @@ dubbel(dubbel(10) + 5)) * 2
 
 > *Opmerking*: we schrijven hier geen `;` na de aanroep van een functie; dat is omdat het niet op een opdracht (statement) gaat, maar om een waarde. Deze waarde willen we mogelijk met andere waarden in een expressie combineren. Ook na een getal schrijven we immers geen `;`.
 
-
 Zoals je in dit voorbeeld ziet, kan een parameter ook een getal voorstellen, en kunnen we overal waar in een expressie een getal verwacht wordt, een parameter gebruiken.
 
 ## Parameters
@@ -115,3 +114,10 @@ function sqr(a) {
 }
 ```
 
+Omgekeerd kunnen we ook overal waar een getal verwacht wordt, een expressie schrijven. In het bijzonder geldt dit voor de parameters bij de aanroep van een functie, bijvoorbeeld:
+
+```js
+sqr(2 * 3)
+```
+
+We zullen later zien dat we andere waarden als parameters kunnen gebruiken: strings, arrays, objecten, en functies.

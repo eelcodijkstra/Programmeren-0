@@ -39,11 +39,3 @@ Geef bij de volgende processen aan wat (i) het programma/algoritme; (ii) de proc
 </quiz>
 
 Welke van deze processen zou ook door een machine (computer, robot) uitgevoerd kunnen worden? Wat zijn daarbij lastige problemen?
-
-
-### Nog enkele begrippen
-
-* statisch - verandert niet in de loop van de tijd;
-* dynamisch - verandert in de loop van de tijd.
-
-Zo spreken we bijvoorbeeld over "dynamisch" geheugen (DRAM) en "statisch" geheugen ("SRAM"). In het geval van dynamisch geheugen lekt de inhoud weg, tenzij je op tijd ingrijp ("refresh"). In het geval van statisch geheugen is een refresh niet nodig.

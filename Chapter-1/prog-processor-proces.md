@@ -2,9 +2,9 @@
 
 > Enkele begrippen rond programmeren komen we ook in het dagelijks leven tegen. Deze voorbeelden kunnen helpen om programmeren beter te begrijpen.
 
-Als je een taart wilt bakken, heb je een *recept* nodig. In het recept staat wat je nodig hebt: de ingrediënten (bijvoorbeeld bloem en boter), en de hulpmiddelen (zoals een kom, een mixer, en een oven). Het recept geeft stap voor stap aan hoe je van de ingrediënten, met deze hulpmiddelen, een taart bakt.
+Als je een taart wilt bakken, heb je een *recept* nodig. In het recept staat wat je nodig hebt: ingrediënten (bijvoorbeeld bloem en boter), en hulpmiddelen (zoals een kom, een mixer, en een oven). Het recept geeft stap voor stap aan hoe je van de ingrediënten, met deze hulpmiddelen, een taart bakt.
 
-Met een recept alleen gebeurt er nog niets: je hebt een *kok* nodig - iemand nodig die het recept kan uitvoeren. Deze heeft de *hulpmiddelen* nodig, en de *ingrediënten*. Daarna kan deze aan de slag gaan met het bakken van de taart. Het uitvoeren van de verschillende stappen van het bakken kost *tijd*. We noemen iets dat in de tijd verloopt een *proces*.
+Met een recept alleen gebeurt er nog niets: je hebt een *kok* nodig - iemand nodig die het recept kan uitvoeren. Deze heeft de bijbehorende *hulpmiddelen* nodig, en de *ingrediënten*. Daarna kan hij aan de slag gaan met het bakken van de taart. Het uitvoeren van de verschillende stappen van het bakken kost *tijd*. We noemen iets dat in de tijd verloopt een *proces*.
 
 Als alles goed gaat, heb je als *resultaat* van het bakken een taart. Aan de taart kun je niet meer zien hoe deze gemaakt is - welke stappen er gebruikt zijn. Maar als je de taart wilt gebruiken (opeten) is dat ook niet je eerste vraag.
 
@@ -81,14 +81,3 @@ In de browser is een knop (button) vaak gekoppeld aan een stukje programma (func
 
 In het kook-voorbeeld kan de chef-kok zijn assistent de opdracht geven voor het bereiden van een gerecht aan de hand van een bepaald recept. Dan kan bijvoorbeeld zijn: "maak een kwart liter sauce bearnaise". In dit geval is het belangrijk dat het recept een naam heeft. De assistent weet dan wat er bedoeld wordt, en kan eventueel in het kookboek het recept opzoeken.
 
-#### Programma en data
-
-Het onderscheid tussen invoer en programma is niet fundamenteel, maar wel praktisch. In een universele Turingmachine - een wiskundig model van een universele computer - staat zowel de invoer als het programma op de band (tape); ook de tussenresultaten van de berekeningen komen daarop terecht. In een computer volgens de Von Neuman architectuur staan zowel de data (invoer en tussenresultaten) als het programma in hetzelfde geheugen. Een Harvard-architectuur gebruikt verschillende geheugens voor programma (code) en data.
-
-Het is om meerdere redenen praktisch om programma en data (invoer en tussenresultaten) te scheiden:
-
-* het programma staat van te voren vast, de invoer is soms pas tijdens de uitvoering van het programma beschikbaar. Dit is bijvoorbeeld het geval bij een interactief programma, zoals de genoemde tekstverwerker, of een computergame.
-    * we zeggen dan ook wel dat het programma een ander "moment of binding" heeft dan de invoer;
-* de invoer beschrijft het actuele *probleem* dat we willen oplossen; het programma beschrijft  de manier waarop we de oplossing willen berekenen.
-    * we kunnen over een programma redeneren voor alle mogelijke invoer, en dus voor alle mogelijke voorbeelden van het probleem dat het programma moet oplossen.
-* we kunnen een computersysteem beveiligen door te bewaken welke programma's in uitvoering genomen worden. We hoeven dan geen beveiliging op de data te hebben.

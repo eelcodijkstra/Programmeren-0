@@ -1,8 +1,7 @@
 {
-    "gitbook" : "2.2.0",
+    "gitbook" : "2.x.x",
     "plugins": [
         "quizzes",
-        "quiz",
-        "mathjax"
+        "quiz"
     ]
 }

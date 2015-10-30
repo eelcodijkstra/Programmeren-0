@@ -2,6 +2,8 @@
 
 * [Inleiding](README.md)
 * [Programma's, processen, en resultaten](Chapter-1/prog-processor-proces.md)
+   * [Statisch en dynamisch](Chapter-1/statisch-en-dynamisch.md)
+   * [Programma's zonder en met invoer](Chapter-1/programmas-met-invoer.md)
    * [Vragen en opdrachten](Chapter-1/vragen-en-opdrachten.md)
 * [Elementaire opdrachten en opeenvolging](Chapter-2/elementaire-opdrachten.md)
     * [Vragen en opdrachten](Chapter-2/vragen-en-opdrachten-2.md)    

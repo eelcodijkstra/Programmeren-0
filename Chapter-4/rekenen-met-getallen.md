@@ -41,17 +41,22 @@ We gebruiken voor getallen voorlopig de volgende operatoren:
 * `+` "plus", optellen
 * `-` "min", aftrekken
 
+### Prioriteit: rekenvolgorde
+
+Operatoren hebben een *prioriteit*: deze bepaalt de rekenvolgorde, en daarmee de betekenis van de expressie. Vermenigvuldigen (`*`) en delen (`/` of `%`) gaan voor optellen (`+`) en aftrekken (`-`).
+
+Operatoren met gelijke prioriteit worden van links naar rechts uitgevoerd. `a - b - c` betekent `(a - b) - c`. Dit noemen we ook wel *links-associatief*.
+
+* [Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+
+### Rest na deling
+
 De operator `%` (modulo: rest na deling) gebruiken we vrij vaak in onze programma's. Enkele voorbeelden:
 
 * `13 % 2` geeft `1`: `13` is een oneven getal
 * `16 % 2` geeft `0`: `16` is een even getal
 * `13 % 10` geeft `3`: het laatste decimale cijfer van het getal
 
-Operatoren hebben een prioriteit: deze bepaalt de rekenvolgorde, en daarmee de betekenis van de expressie. Vermenigvuldigen (`*`) en delen (`/` of `%`) gaan voor optellen (`+`) en aftrekken (`-`).
-
-Operatoren met gelijke prioriteit worden van links naar rechts uitgevoerd. `a - b - c` betekent `(a - b) - c`. Dit noemen we ook wel *links-associatief*.
-
-* [Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 
 ## Haakjes
 

@@ -8,7 +8,15 @@ In JavaScript zijn er ook andere waarden dan getallen, bijvoorbeeld strings (tek
 
 > In de meeste voorbeelden gebruiken we gehele getallen. In JavaScript kan een getal ook een drijvende-komma getal zijn. In veel andere talen maak je uitdrukkelijk verschil tussen gehele getallen en drijvende-komma getallen; in JavaScript maak je dat onderscheid niet.
 
-Een expressie (rekenkundige uitdrukking) in JavaScript bestaat uit waarden - in de vorm van letterlijke getallen, parameters, functie-aanroepen - en operatoren - zoals `+`, `-`, `*`. en `/`. In een expressie van de vorm `a + b` noemen we `a` en `b` ook wel de operanden van de operator `+`.
+Een expressie (rekenkundige uitdrukking) in JavaScript bestaat uit *waarden*, *operatoren* en haakjes. Een waarde is een:
+
+* letterlijk getal (literal): `123`, `-9843`;
+* benoemde waarde (parameter, variabele): `size`, `a`;
+* functie-aanroep: `sqr(3 * size)`, `Math.sqrt(4)`;
+
+De rekenoperatoren zijn `+`, `-`, `*`, `/` en `%` (rest na deling).
+
+In de expressie `a + b` noemen we `a` en `b` ook wel de operanden van de operator `+`.
 
 Enkele voorbeelden van expressies:
 
@@ -61,9 +69,9 @@ Als voorbeeld hiervan gebruiken we enkele bekende wiskundige functies. In JavaSc
 
 Bekende constanten zijn:
 
-* `Math.PI` - de constante \\(\pi\\) (3.14152965...)
-* `Math.E` - de constante \\(e\\) (2.7182818...)
-* `Math.SQRT2` - de constante \\(\sqrt{2}\\) (1.41421356...)
+* `Math.PI` - de constante $$\pi$$ (3.14152965...)
+* `Math.E` - de constante $$e$$ (2.7182818...)
+* `Math.SQRT2` - de constante $$\sqrt{2}$$ (1.41421356...)
 
 Hiermee kunnen we bijvoorbeeld de volgende expressies maken:
 
@@ -71,7 +79,7 @@ Hiermee kunnen we bijvoorbeeld de volgende expressies maken:
 * `Math.sqrt(144)` - geeft 12
 * `10 * Math.random() + 1` - random getal tussen 1 en 10.
 
-> Opmerking: een getal als `Math.PI` kun je niet exact voorstellen als een zwevende-komma getal: je gebruikt een benadering, met een beperkt aantal cijfers. Als je verder rekent met zo'n benadering, wordt het antwoord ook een benadering. Als je exact wilt rekenen met computers, kun je je beter beperken tot gehele getallen. (\\(\pi\\) valt dan buiten de boot.) 
+> Opmerking: een getal als `Math.PI` kun je niet exact voorstellen als een zwevende-komma getal: je gebruikt een benadering, met een beperkt aantal cijfers. Als je verder rekent met zo'n benadering, wordt het antwoord ook een benadering. Als je exact wilt rekenen met computers, kun je je beter beperken tot gehele getallen. $$\pi$$ valt dan buiten de boot.) 
 
 De notatie `Math.xxx` leggen we later uit. Voorlopig kun je `Math.sqrt` als een samengestelde naam beschouwen.
 
@@ -88,7 +96,7 @@ function dubbel(x) {
 }
 ```
 
-Een aanroep van deze functie, bijvoorbeeld `dubbel(10)`, levert een getal op. Overal waar een getal verwacht wordt, kunnen we een dergelijke functie-aanroep schrijven. Gebruik bijvoorbeeld het volgende voorbeeld in het console:
+Een aanroep van deze functie, bijvoorbeeld `dubbel(10)`, levert een getal op. Overal waar een getal verwacht wordt, kunnen we een dergelijke functie-aanroep schrijven. Gebruik het volgende voorbeeld in het console:
 
 ```js
 dubbel(20) + 50
@@ -106,7 +114,7 @@ Zoals je in dit voorbeeld ziet, kan een parameter ook een getal voorstellen, en 
 
 ## Parameters
 
-Zoals we al in eerdere voorbeelden gezien hebben, kan een parameter ook een getal voorstellen. Waar in een expressie een getal verwacht wordt, kunnen we ook een parameter schrijven. Voorbeeld:
+Een parameter is een benoemde waarde. Waar in een expressie een getal verwacht wordt, kunnen we ook een parameter schrijven. Voorbeeld:
 
 ```js
 function sqr(a) {

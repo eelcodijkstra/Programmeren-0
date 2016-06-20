@@ -94,5 +94,25 @@ Er is verschil tussen de declaratie van een naam (variabele), en de koppeling va
 
 * eigenlijk is daarbij sprake van betekenis op verschillende niveaus: de invariante betekenis van een naam - bijvoorbeeld: som; en de actuele waarde van een naam (variabele): de som van de rij getallen tot nu toe.
 
+## Opmerkingen
 
+Met een definitie (of declaratie) koppel je een naam aan een betekenis.
+
+Voorbeelden:
+
+```js
+function succ(i) {
+  return i + 1;
+}
+
+var x = 100;
+let y = x * 2;
+```
+
+Met een naam kun je vervolgens verschillende dingen doen:
+
+* je kunt deze *gebruiken* - bijvoorbeeld: het gebruik van een parameter of variabele in een expressie; of de aanroep van een functie. In deze gevallen gebruik je de betekenis die aan de naam gkoppeld is.
+* je kunt deze doorgeven - 
+* (In dit geval is de actuele waarde niet altijd van belang; maar wel de betekenis op een hoger abstractieniveau.)
+* 
 

@@ -111,8 +111,8 @@ let y = x * 2;
 
 Met een naam kun je vervolgens verschillende dingen doen:
 
-* je kunt deze *gebruiken* - bijvoorbeeld: het gebruik van een parameter of variabele in een expressie; of de aanroep van een functie. In deze gevallen gebruik je de betekenis die aan de naam gkoppeld is.
-* je kunt deze doorgeven - 
+* je kunt deze *gebruiken* - bijvoorbeeld: het gebruik van een parameter of variabele in een expressie; of de aanroep van een functie. In deze gevallen gebruik je de betekenis die aan de naam gekoppeld is.
+* je kunt deze doorgeven - bijvoorbeeld als parameter, of als element (property) van een object.
 * (In dit geval is de actuele waarde niet altijd van belang; maar wel de betekenis op een hoger abstractieniveau.)
 * 
 

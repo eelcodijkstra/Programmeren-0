@@ -18,6 +18,93 @@ We kunnen verschillende vormen van herhaling onderscheiden:
 
 In de voorbeelden in dit hoofdstuk beperken we ons tot de *vooraf bepaalde herhaling* ("herhaal n keer").
 
+## Voorbeeld: tekenen van een vierkant
+
+Voor de vooraf bepaalde herhaling gebruiken we een functie die een meegegeven functie een aantal malen aanroept:
+
+```js
+function repeat(n, f)
+```
+
+De aanroep `repeat(4, side)` waarbij `side` een functie is komt overeen met: `side(); side(); side(); side();`.
+
+We definiëren een functie `side60` waarmee we een zijde van het vierkant tekenen van 60 stappen (pixels) groot:
+
+```js
+function side60() {
+  forward(60);
+  right(90);
+}
+```
+
+Hiermee kunnen we een vierkant tekenen:
+
+```js
+repeat(4, side60);
+```
+
+We merken bij dit voorbeeld het volgende op:
+
+We kunnen op deze manier alleen maar een vierkant tekenen van een vaste grootte. Voor elke grootte moeten we een nieuwe functie `sideXXX` definiëren. Dat is erg omslachtig.
+
+De functie `side60` bestaat uit twee elementen:
+
+1. het tekenen van de zijde
+2. het positioneren van de turtle voor de volgende zijde
+
+Dit is een patroon dat we bij herhalingen vaak tegenkomen: naast de actie die het eigenlijke werk doet, heb je een actie nodig voor de overgang naar de volgende stap in de herhaling.
+
+Voor deze herhaling hebben we een belangrijke eigenschap: voorafgaand aan elke stap staat de turtle in de juiste positie. Dit geldt voor elke stap, ook voor de eerste: daarom noemen we een dergelijke eigenschap een *invariant* van de herhaling. Op dit begrip komen we later nog uitgebreid terug.
+
+## Voorbeeld: tekenen van een vierkant
+
+In het vorige voorbeeld konden we alleen een vierkant tekenen met een vaste grootte: voor elke grootte moeten we een nieuwe functie `sideXXX` definiëren. We willen dit generaliseren tot een functie voor een willekeurig vierkant. En later mogelijk zelfs tot een willekeurig n-kant.
+
+We willen een functie definiëren van de vorm: `function square(size) {...}`, voor het tekenen van een vierkant van willekeurige grootte. We maken gebruik van de herhalingsfunctie `repeat`:
+
+```
+function square(size) {
+  repeat(4, side);
+}
+```
+
+Voor het tekenen van een zijde moeten we een functie maken van de form: `function side() {...}` De grootte van de zijde kunnen we niet als parameter aan deze functie meegeven: `repeat` verwacht een functie zonder parameters.
+
+> Dat is niet helemaal waar: in het gedeelte over rangnummers gaan we daar dieper op in.
+
+Dit betekent dat we in de functie `side` gebruik moeten kunnen maken van de parameter `size` van de functie `square`. *Dit kan als we de functie `side` definiëren binnen de functie `square`*:
+
+```
+function square(size) {
+
+  function side() {
+    forward(size);
+    right(90);
+  }
+  
+  repeat(4, side);
+}
+```
+
+We maken hier gebruik van de *scope-regel*: als een naam niet gedefinieerd is in de huidige functie, gebruik dan de definitie deze naam in de tekstueel omvattende functie (of in de globale naamruimte).
+
+> In dit geval wordt `size` niet gedefinieerd in de functie `side`. Deze functie is gedefinieerd binnen de functie `square`: gebruik dan de definitie van `size` in `square` - met andere woorden: de parameter `size` van `square`.
+
+In het hoofdstuk Namen en scope gaan we dieper in op deze regel.
+
+## Geneste herhaling
+
+We kunnen een opdracht met herhaling zelf ook weer herhalen. We spreken dan over een geneste herhaling.
+
+We kunnen dit demonstreren met een aantal figuren:
+
+Een vlak met vierkanten: een rij is een herhaling van 4 vierkanten, het vlak bestaat uit 3 rijen.
+
+## Herhaling met rangnummer
+
+Soms hangt de herhaalde actie af van het rangnummer van de herhaling: de eerste rij bevat 1 vierkant, de tweede rij 2 vierkanten, enzovoorts.
+
+In de informatie beginnen we altijd met rangnummer 0. Dit zorgt voor meer regelmaat in de programma's, en vermindert de kans op fouten. Het is in het begin even wennen, maar na verloop van tijd merk je de voordelen hiervan.
 
 
 

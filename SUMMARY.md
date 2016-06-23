@@ -32,6 +32,7 @@
     * [Programmeren voor mensen](Chapter-9/programmeren-voor-mensen.md)
     * [Programmeren voor computers](Chapter-9/programmeren-voor-computers.md)
     * [Programma en data](Chapter-9/programma-en-data.md)
+    * [Generalisatie](Chapter-9/generalisatie.md)
 * [Later uitwerken](Chapter-A/chapter-a.md)
     * [Strings-2](Chapter-A/strings-2.md)
     * [Arrays-2](Chapter-A/arrays-2.md)

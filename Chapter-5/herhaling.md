@@ -16,11 +16,11 @@ We kunnen verschillende vormen van herhaling onderscheiden:
 * als je te maken hebt met een reeks (verzameling) van objecten, dan kun je een actie uitvoeren op *alle objecten in de reeks*.
 * in andere gevallen herhaal je een actie totdat je een bepaalde toestand bereikt hebt (vgl. het kloppen van eiwit).
 
-In de voorbeelden in dit hoofdstuk beperken we ons tot de *vooraf bepaalde herhaling* ("herhaal n keer").
+In de voorbeelden in dit hoofdstuk beperken we ons tot de *bepaalde herhaling* ("herhaal n keer"): vóór de herhaling is bepaald hoe vaak deze herhaald moet worden 
 
 ## Voorbeeld: tekenen van een vierkant
 
-Voor de vooraf bepaalde herhaling gebruiken we een functie die een meegegeven functie een aantal malen aanroept:
+Voor de *bepaalde herhaling* gebruiken we een functie die een meegegeven functie een aantal malen aanroept:
 
 ```js
 function repeat(n, f)
@@ -91,6 +91,13 @@ We maken hier gebruik van de *scope-regel*: als een naam niet gedefinieerd is in
 > In dit geval wordt `size` niet gedefinieerd in de functie `side`. Deze functie is gedefinieerd binnen de functie `square`: gebruik dan de definitie van `size` in `square` - met andere woorden: de parameter `size` van `square`.
 
 In het hoofdstuk Namen en scope gaan we dieper in op deze regel.
+
+## Lege herhaling
+
+Als je voorafgaand aan de herhaling al het uiteindelijke resultaat bereikt hebt, voer je de acties in de herhaling niet uit. We noemen dit ook wel een lege herhaling. Voorbeeld: `repeat(0, edge)`.
+
+Deze lege herhaling is een bijzonder geval waar we altijd rekening mee houden. Voorbeeld: als je een rij getallen ter lengte 0 moet optellen, is de som 0.
+
 
 ## Geneste herhaling
 

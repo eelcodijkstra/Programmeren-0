@@ -21,7 +21,7 @@ function polygon(n, size) {
 }
 ```
 
-In dit geval is het product tussen de hoek en het aantal zijden gelijk aan 360 graden: een complete draai.
+In dit geval is het product tussen de draaiing (parameter van `right`) en het aantal zijden (`n`) gelijk aan 360 graden: een complete draai.
 
 ## Generalisatie bij herhaling
 

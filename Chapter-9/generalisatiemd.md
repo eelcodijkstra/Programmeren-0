@@ -23,5 +23,8 @@ function polygon(n, size) {
 
 In dit geval is het product tussen de hoek en het aantal zijden gelijk aan 360 graden: een complete draai.
 
+## Generalisatie bij herhaling
+
+Bij het oplossen van een probleem met herhaling zoek je naar het algemene patroon van een stap. Daarbij kan het helpen om de eerste paar stappen eerst als concreet probleem op te lossen. Vervolgens probeer je die oplossingen dan te generaliseren.
 
 

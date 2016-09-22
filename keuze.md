@@ -35,7 +35,7 @@ Enkele voorbeelden
 
 ### maximum
 
-We definiëren een functie voor het berekenen van het *maximum* van twee getallen:
+We definiëren een functie voor het berekenen van het *maximum* van twee getallen. Het functieresultaat is één van de parameters, `a` of `b`. We hebben als mogelijke acties dus `return a` en `return b`. De eerste actie voeren we uit als `a` het grootste getal is: `a > b`. In het andere geval voeren we de tweede actie uit.
 
 ```js
 function max (a, b) {
@@ -46,5 +46,17 @@ function max (a, b) {
   }
 }
 ```
+*Vraag* wat verandert er als je de conditie `a >= b` gebruikt?
+
+*Opdracht* definieer een functie voor het bepalen van het minimum van twee getallen.
+
+*Opdracht* definieer een functie voor het bepalen van het maximum van drie getallen.
+
+*Opdracht* definieer een functie `abs` voor het bepalen van de *absolute waarde* van een getal. (De absolute waarde $$|x|\$$ van een getal $$x$$ is $$x$$, als $$x >= 0$$; anders is dit $$-x$$. De absolute waarde van 4 is 4; de absolute waarde van -3 is 3.)
+
+
+
+
+
 
 

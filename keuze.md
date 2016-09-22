@@ -39,4 +39,6 @@ We definiëren een functie voor het
 
 ```js
 function max
+```
+
 

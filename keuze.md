@@ -35,10 +35,16 @@ Enkele voorbeelden
 
 ### maximum
 
-We definiëren een functie voor het 
+We definiëren een functie voor het berekenen van het *maximum* van twee getallen:
 
 ```js
-function max
+function max (a, b) {
+  if (a > b) {
+    return a;
+  } else {
+    return b;
+  }
+}
 ```
 
 

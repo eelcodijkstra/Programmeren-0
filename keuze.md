@@ -32,6 +32,8 @@ Voor getallen hebben we meer mogelijkheden:
 
 Enkele voorbeelden
 
+In een volgend hoofdstuk gaan we dieper in op Boolean waarden en uitdrukkingen.
+
 ### maximum
 
 We definiëren een functie voor het berekenen van het _maximum_ van twee getallen. Het functieresultaat is één van de parameters, `a` of `b`. We hebben als mogelijke acties dus `return a` en `return b`. De eerste actie voeren we uit als `a` het grootste getal is: `a > b`. In het andere geval voeren we de tweede actie uit.
@@ -81,7 +83,29 @@ In welke gevallen gebruik je deze keuze-constructie? Waar moet je dan op letten?
 * grensgevallen;
 * partiële operaties
 
-### Grensgevallen
+#### Filters
+
+Soms moet je een opdracht alleen uitvoeren voor waarden die aan een bepaalde voorwaarde voldoen. Voorbeeld: bepaal de som van de positieve getallen uit een rij `r`:
+
+```js
+var som = 0;
+r.forEach(function (x) {
+  if (x > 0) {
+    som = som + x;
+  }
+});
+```
+
+In verkorte notatie:
+
+```js
+var som = 0;
+r.forEach( (x) => if (x > 0) {som = som + x;} );
+```
+
+(Vergelijk dit met de functie voor het optellen van alle getallen in een rij.)
+
+#### Grensgevallen
 
 #### Partiële operaties
 

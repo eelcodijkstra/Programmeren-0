@@ -1,6 +1,6 @@
 Keuze \(IF\)
 
-In dit hoofdstuk maak je kennis met de IF-constructie. Deze gebruik je als de actie die uitgevoerd moet niet altijd dezelfde is. Afhankelijk van de \*conditie\* wordt de ene of de andere opdracht uitgevoerd. De notatie hiervoor in JavaScript is:
+In dit hoofdstuk maak je kennis met de IF- of keuze-constructie. Deze gebruik je als de actie die uitgevoerd moet niet altijd dezelfde is. Afhankelijk van de \*conditie\* wordt de ene of de andere opdracht uitgevoerd. De notatie hiervoor in JavaScript is:
 
 ```js
 if (condition) {
@@ -10,7 +10,7 @@ if (condition) {
 }
 ```
 
-Als de `condition` de waarde `true` \("waar"\) oplevert, dan wordt `action1` uitgevoerd; als de `condition` `false` \("onwaar"\) is, wordt `actionB` uitgevoerd.
+Als de uitdrukking `condition` de waarde `true` \("waar"\) oplevert, dan wordt `action1` uitgevoerd; als `condition` `false` \("onwaar"\) is, wordt `actionB` uitgevoerd.
 
 ### Vergelijken van waarden
 
@@ -54,6 +54,25 @@ _Opdracht:_ definieer een functie voor het bepalen van het maximum van drie geta
 
 _Opdracht:_ definieer een functie `abs` voor het bepalen van de _absolute waarde_ van een getal. \(De absolute waarde $$|x|$$ van een getal $$x$$ is $$x$$, als $$x >= 0$$; anders is dit $$-x$$. De absolute waarde van 4 is 4; de absolute waarde van -3 is 3.\)
 
+### turtle
+
+Een voorbeeld uit de functies voor turtle-graphics:
+
+```js
+function forward(n) {
+  var dx = n * cos(dir);   // change in x-dir
+  var dy = n * sin(dir);   // change in y-dir
+  var newpos = {x: pos.x + dx, y: pos.y + dy};
+  if (down) {
+    ... code to draw line to newpos ...
+  } else {
+    pos = newpos;  // just move to newpos
+  }
+}
+```
+
+Als de pen `down` is, teken dan een lijn van de huidige positie naar de nieuwe positie van de turtle; als de pen niet `down` is, verplaats dan de turtle direct naar de nieuwe positie.
+
 ### Hoe gebruik je de keuze-constructie?
 
 In welke gevallen gebruik je deze keuze-constructie? Waar moet je dan op letten?
@@ -66,9 +85,9 @@ In welke gevallen gebruik je deze keuze-constructie? Waar moet je dan op letten?
 
 #### Partiële operaties
 
-Sommige opdrachten zijn alleen maar mogelijk als de parameters aan een bepaalde conditie voldoen. Zo is deling `a / b` alleen gedefinieerd als `b` niet 0 is \(`b !== 0`\). En de wortel $$\sqrt{x}$$ is alleen gedefinieerd voor $$x \geq 0$$.
+Sommige opdrachten zijn alleen maar mogelijk als de parameters aan een bepaalde conditie voldoen. Zo is deling $$a / b$$ alleen gedefinieerd als $$b$$ niet 0 is \($$b \neq 0$$\). En de wortel $$\sqrt{x}$$ is alleen gedefinieerd voor $$x \geq 0$$.
 
-_Opdracht_ geef nog een voorbeeld van een partiële operatie, uit de wiskunde, of uit een programmeertaal.
+_Opdracht:_ geef nog een voorbeeld van een partiële operatie, uit de wiskunde, of uit een programmeertaal.
 
 Als je een functie definieert, heeft deze soms voor bepaalde parameterwaarden geen betekenis. Of je moet er zelf een betekenis voor verzinnen.
 
@@ -76,7 +95,7 @@ Voorbeelden:
 
 * wat betekent `forward(-3)`? Kun je hier een zinvolle betekenis aan geven?
 * wat betekent `right(-90)`? Kun je hier een zinvolle betekenis aan geven?
-* wat betekent `vierkant(-100)` - voor het tekenen van een vierkant van grootte `-100`?
+* wat betekent `vierkant(-100)` - voor het tekenen van een vierkant van grootte $$-100$$?
 
 In de definitie van zo'n functie zul je deze speciale gevallen vaak onderscheiden van het normale geval met behulp van een keuze-opdracht.
 

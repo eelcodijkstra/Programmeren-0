@@ -70,11 +70,11 @@ Sommige opdrachten zijn alleen maar mogelijk als de parameters aan een bepaalde 
 
 _Opdracht_ geef nog een voorbeeld van een partiële operatie, uit de wiskunde, of uit een programmeertaal.
 
-Als je een functie definieert, heeft deze soms voor bepaalde waarden geen betekenis. Of je moet er zelf een betekenis voor verzinnen.
+Als je een functie definieert, heeft deze soms voor bepaalde parameterwaarden geen betekenis. Of je moet er zelf een betekenis voor verzinnen.
 
 Voorbeelden:
 
-* wat betekent \`forward\(-3\)? Kun je hier een zinvolle betekenis aan geven?
+* wat betekent `forward(-3)`? Kun je hier een zinvolle betekenis aan geven?
 * wat betekent `right(-90)`? Kun je hier een zinvolle betekenis aan geven?
 * wat betekent `vierkant(-100)` - voor het tekenen van een vierkant van grootte `-100`?
 

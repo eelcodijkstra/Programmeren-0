@@ -100,7 +100,7 @@ In verkorte notatie:
 
 ```js
 var som = 0;
-r.forEach( (x) => if (x > 0) {som = som + x;} );
+r.forEach( (x) => {if (x > 0) {som = som + x;}} );
 ```
 
 (Vergelijk dit met de functie voor het optellen van alle getallen in een rij.)

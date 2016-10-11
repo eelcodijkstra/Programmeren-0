@@ -56,7 +56,7 @@ _Opdracht:_ definieer een functie voor het bepalen van het maximum van drie geta
 
 _Opdracht:_ definieer een functie `abs` voor het bepalen van de _absolute waarde_ van een getal. \(De absolute waarde $$|x|$$ van een getal $$x$$ is $$x$$, als $$x >= 0$$; anders is dit $$-x$$. De absolute waarde van 4 is 4; de absolute waarde van -3 is 3.\)
 
-### turtle
+### turtle-forward
 
 Een voorbeeld uit de functies voor turtle-graphics:
 
@@ -65,6 +65,7 @@ function forward(n) {
   var dx = n * cos(dir);   // change in x-dir
   var dy = n * sin(dir);   // change in y-dir
   var newpos = {x: pos.x + dx, y: pos.y + dy};
+
   if (down) {
     ... code to draw line to newpos ...
   } else {
@@ -74,6 +75,16 @@ function forward(n) {
 ```
 
 Als de pen `down` is, teken dan een lijn van de huidige positie naar de nieuwe positie van de turtle; als de pen niet `down` is, verplaats dan de turtle direct naar de nieuwe positie.
+
+### IF zonder ELSE
+
+Soms moet een actie alleen uitgevoerd worden als een bepaalde conditie `true` is. In het andere geval moet er geen actie uitgevoerd worden. In zo'n geval laten we het else-deel weg:
+
+```js
+  if (condition) {
+    actionA;
+  }
+```
 
 ### Hoe gebruik je de keuze-constructie?
 
@@ -96,7 +107,7 @@ r.forEach(function (x) {
 });
 ```
 
-In verkorte notatie:
+In verkorte functie-notatie:
 
 ```js
 var som = 0;

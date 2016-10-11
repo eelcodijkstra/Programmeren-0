@@ -1,4 +1,4 @@
-Keuze (IF)
+Keuze \(IF\)
 
 In dit hoofdstuk maak je kennis met de IF-constructie. Deze gebruik je als de actie die uitgevoerd moet niet altijd dezelfde is. Afhankelijk van de \*conditie\* wordt de ene of de andere opdracht uitgevoerd. De notatie hiervoor in JavaScript is:
 
@@ -52,7 +52,7 @@ _Opdracht:_ definieer een functie voor het bepalen van het minimum van twee geta
 
 _Opdracht:_ definieer een functie voor het bepalen van het maximum van drie getallen.
 
-_Opdracht:_ definieer een functie `abs` voor het bepalen van de _absolute waarde_ van een getal. \(De absolute waarde $$|x|\$$ van een getal $$x$$ is $$x$$, als $$x >= 0$$; anders is dit $$-x$$. De absolute waarde van 4 is 4; de absolute waarde van -3 is 3.\)
+_Opdracht:_ definieer een functie `abs` voor het bepalen van de _absolute waarde_ van een getal. \(De absolute waarde $$|x|$$ van een getal $$x$$ is $$x$$, als $$x >= 0$$; anders is dit $$-x$$. De absolute waarde van 4 is 4; de absolute waarde van -3 is 3.\)
 
 ### Hoe gebruik je de keuze-constructie?
 

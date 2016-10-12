@@ -11,6 +11,7 @@
     * [Vragen en opdrachten](Chapter-3/vragen-en-opdrachten-3.md)
 * [Rekenen met getallen](Chapter-4/rekenen-met-getallen.md)
 * [Herhaling](Chapter-5/herhaling.md)
+* [Keuze](keuze.md)
 * [Functie als parameter](Chapter-3/functie-als-parameter.md)
 * [Enkelvoudige waarden](Chapter-7/enkelvoudige-waarden.md)
 * [Bouwen van programma's](Chapter-8/bouwen-van-programmas.md)
@@ -33,9 +34,6 @@
     * [Programmeren voor computers](Chapter-9/programmeren-voor-computers.md)
     * [Programma en data](Chapter-9/programma-en-data.md)
     * [Generalisatie](Chapter-9/generalisatiemd.md)
-* [Later uitwerken](Chapter-A/chapter-a.md)
-    * [Strings-2](Chapter-A/strings-2.md)
-    * [Arrays-2](Chapter-A/arrays-2.md)
-    * [Arrays-3](Chapter-A/arrays-3.md)
 * [Keuze](keuze.md)
+* [Syntax, semantiek en pragmatiek](syntax-semantiek-en-pragmatiek.md)
 
